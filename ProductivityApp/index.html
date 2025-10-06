@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Productivity App</h1>
+    </header>
+
+    <main>
+      <!-- Add Task Form -->
+      <section class="add-task">
+        <h2>Add New Task</h2>
+        <input type="text" id="task-title" placeholder="Task Title" required />
+        <textarea id="task-desc" placeholder="Task Description"></textarea>
+        <select id="task-priority">
+          <option value="high">High Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="low">Low Priority</option>
+        </select>
+        <select id="task-category">
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+          <option value="health">Health</option>
+        </select>
+        <button id="add-task-btn">Add Task</button>
+      </section>
+
+      <!-- Filters -->
+      <section class="filters">
+        <select id="filter-category">
+          <option value="all">All Categories</option>
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+          <option value="health">Health</option>
+        </select>
+
+        <select id="filter-status">
+          <option value="all">All Tasks</option>
+          <option value="completed">Completed</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </section>
+
+      <!-- Task List -->
+      <section class="task-list">
+        <div class="container" id="task-container">
+          <!-- Task cards will appear here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 Productivity App</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

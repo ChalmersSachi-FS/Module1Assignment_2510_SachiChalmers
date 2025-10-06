@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Task</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Add Task</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </header>
+
+    <main>
+      <form id="task-form">
+        <label>Title: <input type="text" id="title" required /></label>
+        <label
+          >Description: <textarea id="description" required></textarea>
+        </label>
+        <label
+          >Priority:
+          <select id="priority" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+        </label>
+        <label
+          >Category:
+          <select id="category" required>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Health">Health</option>
+          </select>
+        </label>
+        <button type="submit">Add Task</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
